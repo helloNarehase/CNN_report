@@ -10,6 +10,7 @@
 CNN 모델 학습시 accuracy 값이 1.00을 찍는 경우를 많이 보게 됩니다.이러한 이유로는 CNN의 학습데이터셋을 `단순 기억하는 것(과적합:Overfitting)`으로 실제 성능 정확도로 봐서는 안됩니다. <br>
 이를 해결하는 방법은 `Dropout Layer`의 활용과 `데이터셋의 재분류` 및 `중복 제거`, `추가데이터 수집`등의 방법이 있습니다. <br>
 또한 평가 지표를 `Accuracy` 보다는 `validation accuracy(검증 정확도)`를 활용하는 것으로 모델의 학습 신뢰성을 확인할수 있습니다.
+![](https://user-images.githubusercontent.com/132330370/242189569-0050725c-d72d-4b67-901f-f5c579c04744.png)
 ``` java
  Models.fit(np.array(x),np.array(y),55, 500, validation_split=0.25)
 ```
